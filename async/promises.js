@@ -43,3 +43,8 @@ hola('Carlos')
     .then((nombre) => {
         console.log('Terminando el proceso');
     })
+    //Si alguna función da error, se pasa al catch.
+    .catch(error => {
+        console.error('Ha habido un error:');
+        console.error(error);
+    })
